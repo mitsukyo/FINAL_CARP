@@ -36,8 +36,12 @@
             this.btnDelete = new _2CARPENELLI.RJButton();
             this.btnAdd = new _2CARPENELLI.RJButton();
             this.panelBodyBreakpoint = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panelBodyBreakpoint.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -69,7 +73,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(42, 38);
+            this.label2.Location = new System.Drawing.Point(22, 31);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(254, 44);
             this.label2.TabIndex = 53;
@@ -84,7 +88,7 @@
             this.breakBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.breakBox.FormattingEnabled = true;
             this.breakBox.ItemHeight = 25;
-            this.breakBox.Location = new System.Drawing.Point(50, 99);
+            this.breakBox.Location = new System.Drawing.Point(46, 32);
             this.breakBox.Name = "breakBox";
             this.breakBox.Size = new System.Drawing.Size(836, 425);
             this.breakBox.TabIndex = 58;
@@ -145,13 +149,31 @@
             // 
             // panelBodyBreakpoint
             // 
-            this.panelBodyBreakpoint.Controls.Add(this.breakBox);
-            this.panelBodyBreakpoint.Controls.Add(this.label2);
+            this.panelBodyBreakpoint.Controls.Add(this.panel3);
+            this.panelBodyBreakpoint.Controls.Add(this.panel2);
             this.panelBodyBreakpoint.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBodyBreakpoint.Location = new System.Drawing.Point(0, 0);
             this.panelBodyBreakpoint.Name = "panelBodyBreakpoint";
             this.panelBodyBreakpoint.Size = new System.Drawing.Size(938, 696);
             this.panelBodyBreakpoint.TabIndex = 60;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(938, 100);
+            this.panel2.TabIndex = 59;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.breakBox);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 100);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(938, 596);
+            this.panel3.TabIndex = 60;
             // 
             // ViewBreakPoints
             // 
@@ -163,11 +185,14 @@
             this.Controls.Add(this.panelBodyBreakpoint);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ViewBreakPoints";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "ViewBreakPoints";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panelBodyBreakpoint.ResumeLayout(false);
-            this.panelBodyBreakpoint.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -182,5 +207,7 @@
         private RJButton btnAdd;
         private RJButton btnDelete;
         private System.Windows.Forms.Panel panelBodyBreakpoint;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
     }
 }
