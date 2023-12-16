@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{222A3609-10CE-461A-999B-FCC199435BA5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_2CARPENELLI</RootNamespace>
+    <AssemblyName>2CARPENELLI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnimationHandler.cs" />
+    <Compile Include="Assembler.cs" />
+    <Compile Include="AssemblerDirectives.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblerDirectives.Designer.cs">
+      <DependentUpon>AssemblerDirectives.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblerLabels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblerLabels.Designer.cs">
+      <DependentUpon>AssemblerLabels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblingAProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblingAProgram.Designer.cs">
+      <DependentUpon>AssemblingAProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyError.cs" />
+    <Compile Include="AssemblyInstructions.cs" />
+    <Compile Include="AssemblyResults.cs" />
+    <Compile Include="AssemblySourceLine.cs" />
+    <Compile Include="AssemblySourceProgram.cs" />
+    <Compile Include="CPU.cs" />
+    <Compile Include="StartUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartUpForm.Designer.cs">
+      <DependentUpon>StartUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Memory.cs" />
+    <Compile Include="NumericConstants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumericConstants.Designer.cs">
+      <DependentUpon>NumericConstants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgramExample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgramExample.Designer.cs">
+      <DependentUpon>ProgramExample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuickHelp.Designer.cs">
+      <DependentUpon>QuickHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RJButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Screenshots.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screenshots.Designer.cs">
+      <DependentUpon>Screenshots.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubstringRange.cs" />
+    <Compile Include="TraceResults.cs" />
+    <Compile Include="ViewBreakPoints.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewBreakPoints.Designer.cs">
+      <DependentUpon>ViewBreakPoints.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMemoryAndIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewMemoryAndIO.Designer.cs">
+      <DependentUpon>ViewMemoryAndIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSystem.Designer.cs">
+      <DependentUpon>ViewSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTraceResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewTraceResult.Designer.cs">
+      <DependentUpon>ViewTraceResult.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AssemblerDirectives.resx">
+      <DependentUpon>AssemblerDirectives.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssemblerLabels.resx">
+      <DependentUpon>AssemblerLabels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssemblingAProgram.resx">
+      <DependentUpon>AssemblingAProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartUpForm.resx">
+      <DependentUpon>StartUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumericConstants.resx">
+      <DependentUpon>NumericConstants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgramExample.resx">
+      <DependentUpon>ProgramExample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="QuickHelp.resx">
+      <DependentUpon>QuickHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screenshots.resx">
+      <DependentUpon>Screenshots.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewBreakPoints.resx">
+      <DependentUpon>ViewBreakPoints.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewMemoryAndIO.resx">
+      <DependentUpon>ViewMemoryAndIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSystem.resx">
+      <DependentUpon>ViewSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewTraceResult.resx">
+      <DependentUpon>ViewTraceResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
