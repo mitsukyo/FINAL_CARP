@@ -36,25 +36,24 @@
             this.btnClear = new _2CARPENELLI.RJButton();
             this.btnView = new _2CARPENELLI.RJButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox2
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox2.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
             this.textBox2.Location = new System.Drawing.Point(46, 32);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(836, 425);
+            this.textBox2.Size = new System.Drawing.Size(836, 433);
             this.textBox2.TabIndex = 223;
             // 
             // panel1
@@ -178,17 +177,14 @@
             this.panel2.Size = new System.Drawing.Size(938, 592);
             this.panel2.TabIndex = 229;
             // 
-            // label2
+            // panel4
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(22, 31);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(337, 44);
-            this.label2.TabIndex = 224;
-            this.label2.Text = "MEMORY AND I/O";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.panel4.Controls.Add(this.textBox2);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(0, 88);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(938, 504);
+            this.panel4.TabIndex = 1;
             // 
             // panel3
             // 
@@ -196,17 +192,20 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(938, 100);
+            this.panel3.Size = new System.Drawing.Size(938, 88);
             this.panel3.TabIndex = 0;
             // 
-            // panel4
+            // label2
             // 
-            this.panel4.Controls.Add(this.textBox2);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 100);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(938, 492);
-            this.panel4.TabIndex = 1;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(38, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(337, 44);
+            this.label2.TabIndex = 224;
+            this.label2.Text = "MEMORY AND I/O";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // ViewMemoryAndIO
             // 
@@ -221,10 +220,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }

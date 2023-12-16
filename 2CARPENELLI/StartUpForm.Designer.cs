@@ -235,7 +235,7 @@
             this.button4.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.button4.Size = new System.Drawing.Size(166, 37);
             this.button4.TabIndex = 2;
-            this.button4.Text = "Screenshots";
+            this.button4.Text = "How does this work?";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);

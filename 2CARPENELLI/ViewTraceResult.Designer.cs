@@ -42,7 +42,6 @@
             // 
             // textBox2
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox2.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
@@ -57,7 +56,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(22, 31);
+            this.label2.Location = new System.Drawing.Point(38, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(275, 44);
             this.label2.TabIndex = 227;
@@ -70,7 +69,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(938, 100);
+            this.panel2.Size = new System.Drawing.Size(938, 88);
             this.panel2.TabIndex = 228;
             // 
             // panel3
@@ -78,9 +77,9 @@
             this.panel3.Controls.Add(this.panel1);
             this.panel3.Controls.Add(this.textBox2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 100);
+            this.panel3.Location = new System.Drawing.Point(0, 88);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(938, 596);
+            this.panel3.Size = new System.Drawing.Size(938, 608);
             this.panel3.TabIndex = 229;
             // 
             // panel1
@@ -88,7 +87,7 @@
             this.panel1.Controls.Add(this.rjButton1);
             this.panel1.Controls.Add(this.btnTraceResults);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 492);
+            this.panel1.Location = new System.Drawing.Point(0, 504);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(938, 104);
             this.panel1.TabIndex = 0;
