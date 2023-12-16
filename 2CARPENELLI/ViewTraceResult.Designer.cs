@@ -30,9 +30,9 @@
         {
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.rjButton1 = new _2CARPENELLI.RJButton();
             this.btnTraceResults = new _2CARPENELLI.RJButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,18 +56,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(938, 132);
             this.panel1.TabIndex = 226;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(42, 38);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(373, 44);
-            this.label2.TabIndex = 227;
-            this.label2.Text = "VIEW TRACE RESULTS";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // rjButton1
             // 
@@ -104,14 +92,26 @@
             this.btnTraceResults.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTraceResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
             this.btnTraceResults.ForeColor = System.Drawing.Color.White;
-            this.btnTraceResults.Location = new System.Drawing.Point(598, 0);
+            this.btnTraceResults.Location = new System.Drawing.Point(636, 0);
             this.btnTraceResults.Name = "btnTraceResults";
-            this.btnTraceResults.Size = new System.Drawing.Size(175, 36);
+            this.btnTraceResults.Size = new System.Drawing.Size(137, 36);
             this.btnTraceResults.TabIndex = 227;
-            this.btnTraceResults.Text = "TRACE RESULT";
+            this.btnTraceResults.Text = "TRACE";
             this.btnTraceResults.TextColor = System.Drawing.Color.White;
             this.btnTraceResults.UseVisualStyleBackColor = false;
             this.btnTraceResults.Click += new System.EventHandler(this.btnTraceResults_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(42, 38);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(275, 44);
+            this.label2.TabIndex = 227;
+            this.label2.Text = "TRACE RESULTS";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // ViewTraceResult
             // 
