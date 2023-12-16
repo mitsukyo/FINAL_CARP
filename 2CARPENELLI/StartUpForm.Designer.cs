@@ -319,6 +319,7 @@
             // 
             // panelChildForm
             // 
+            this.panelChildForm.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelChildForm.Controls.Add(this.pictureBox2);
             this.panelChildForm.Controls.Add(this.rjButton1);
             this.panelChildForm.Controls.Add(this.label2);
@@ -379,6 +380,7 @@
             // 
             // label1
             // 
+            this.label1.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

@@ -158,8 +158,13 @@
             this.pcInput = new System.Windows.Forms.TextBox();
             this.arInput = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.resetRegisters = new _2CARPENELLI.RJButton();
+            this.rjButton1 = new _2CARPENELLI.RJButton();
             this.label1 = new System.Windows.Forms.Label();
             this.simLocStart = new System.Windows.Forms.TextBox();
+            this.btnNext = new _2CARPENELLI.RJButton();
+            this.btnStart = new _2CARPENELLI.RJButton();
+            this.btnFullCycle = new _2CARPENELLI.RJButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.move5y = new System.Windows.Forms.PictureBox();
             this.move5 = new System.Windows.Forms.PictureBox();
@@ -181,11 +186,8 @@
             this.dToL7 = new System.Windows.Forms.Timer(this.components);
             this.l7ToE4 = new System.Windows.Forms.Timer(this.components);
             this.clkTimer = new System.Windows.Forms.Timer(this.components);
-            this.resetRegisters = new _2CARPENELLI.RJButton();
-            this.rjButton1 = new _2CARPENELLI.RJButton();
-            this.btnNext = new _2CARPENELLI.RJButton();
-            this.btnStart = new _2CARPENELLI.RJButton();
-            this.btnFullCycle = new _2CARPENELLI.RJButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.move10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.move9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.move12)).BeginInit();
@@ -1683,6 +1685,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.resetRegisters);
             this.panel2.Controls.Add(this.rjButton1);
             this.panel2.Controls.Add(this.label1);
@@ -1695,6 +1698,53 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(956, 115);
             this.panel2.TabIndex = 334;
+            // 
+            // resetRegisters
+            // 
+            this.resetRegisters.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.resetRegisters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
+            this.resetRegisters.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
+            this.resetRegisters.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.resetRegisters.BorderRadius = 20;
+            this.resetRegisters.BorderSize = 0;
+            this.resetRegisters.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.resetRegisters.FlatAppearance.BorderSize = 0;
+            this.resetRegisters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.resetRegisters.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold);
+            this.resetRegisters.ForeColor = System.Drawing.Color.White;
+            this.resetRegisters.Location = new System.Drawing.Point(775, 15);
+            this.resetRegisters.Name = "resetRegisters";
+            this.resetRegisters.Size = new System.Drawing.Size(163, 22);
+            this.resetRegisters.TabIndex = 337;
+            this.resetRegisters.Text = "Reset Registers";
+            this.resetRegisters.TextColor = System.Drawing.Color.White;
+            this.resetRegisters.UseVisualStyleBackColor = false;
+            this.resetRegisters.Click += new System.EventHandler(this.Reset_Btn);
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
+            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
+            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BorderRadius = 20;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold);
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Location = new System.Drawing.Point(686, 63);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.rjButton1.Size = new System.Drawing.Size(68, 35);
+            this.rjButton1.TabIndex = 336;
+            this.rjButton1.Text = "Stop";
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.Stop_Btn);
             // 
             // label1
             // 
@@ -1720,6 +1770,75 @@
             this.simLocStart.TabIndex = 335;
             this.simLocStart.Text = "0";
             this.simLocStart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnNext
+            // 
+            this.btnNext.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
+            this.btnNext.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
+            this.btnNext.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnNext.BorderRadius = 20;
+            this.btnNext.BorderSize = 0;
+            this.btnNext.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNext.FlatAppearance.BorderSize = 0;
+            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold);
+            this.btnNext.ForeColor = System.Drawing.Color.White;
+            this.btnNext.Location = new System.Drawing.Point(775, 43);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(163, 26);
+            this.btnNext.TabIndex = 334;
+            this.btnNext.Text = "Step Through Cycle";
+            this.btnNext.TextColor = System.Drawing.Color.White;
+            this.btnNext.UseVisualStyleBackColor = false;
+            this.btnNext.Click += new System.EventHandler(this.StepCycle_Tick);
+            // 
+            // btnStart
+            // 
+            this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
+            this.btnStart.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
+            this.btnStart.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnStart.BorderRadius = 20;
+            this.btnStart.BorderSize = 0;
+            this.btnStart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStart.FlatAppearance.BorderSize = 0;
+            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold);
+            this.btnStart.ForeColor = System.Drawing.Color.White;
+            this.btnStart.Location = new System.Drawing.Point(775, 75);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(163, 26);
+            this.btnStart.TabIndex = 333;
+            this.btnStart.Text = "Step Through Instruction";
+            this.btnStart.TextColor = System.Drawing.Color.White;
+            this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.StepThroughInstruction_Click);
+            // 
+            // btnFullCycle
+            // 
+            this.btnFullCycle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFullCycle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
+            this.btnFullCycle.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
+            this.btnFullCycle.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnFullCycle.BorderRadius = 20;
+            this.btnFullCycle.BorderSize = 0;
+            this.btnFullCycle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFullCycle.FlatAppearance.BorderSize = 0;
+            this.btnFullCycle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFullCycle.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold);
+            this.btnFullCycle.ForeColor = System.Drawing.Color.White;
+            this.btnFullCycle.Location = new System.Drawing.Point(607, 63);
+            this.btnFullCycle.Name = "btnFullCycle";
+            this.btnFullCycle.Size = new System.Drawing.Size(68, 35);
+            this.btnFullCycle.TabIndex = 332;
+            this.btnFullCycle.Text = "Start";
+            this.btnFullCycle.TextColor = System.Drawing.Color.White;
+            this.btnFullCycle.UseVisualStyleBackColor = false;
+            this.btnFullCycle.Click += new System.EventHandler(this.StartToEndBtn_Click);
             // 
             // panel3
             // 
@@ -1852,121 +1971,22 @@
             this.clkTimer.Interval = 200;
             this.clkTimer.Tick += new System.EventHandler(this.ClkTimer);
             // 
-            // resetRegisters
+            // textBox1
             // 
-            this.resetRegisters.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.resetRegisters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
-            this.resetRegisters.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
-            this.resetRegisters.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.resetRegisters.BorderRadius = 20;
-            this.resetRegisters.BorderSize = 0;
-            this.resetRegisters.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.resetRegisters.FlatAppearance.BorderSize = 0;
-            this.resetRegisters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.resetRegisters.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold);
-            this.resetRegisters.ForeColor = System.Drawing.Color.White;
-            this.resetRegisters.Location = new System.Drawing.Point(775, 15);
-            this.resetRegisters.Name = "resetRegisters";
-            this.resetRegisters.Size = new System.Drawing.Size(163, 22);
-            this.resetRegisters.TabIndex = 337;
-            this.resetRegisters.Text = "Reset Registers";
-            this.resetRegisters.TextColor = System.Drawing.Color.White;
-            this.resetRegisters.UseVisualStyleBackColor = false;
-            this.resetRegisters.Click += new System.EventHandler(this.Reset_Btn);
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(37)))), ((int)(((byte)(69)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.textBox1.Location = new System.Drawing.Point(13, 15);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(425, 15);
+            this.textBox1.TabIndex = 338;
+            this.textBox1.Text = "*To avoid breaking, please only click the buttons once.";
             // 
-            // rjButton1
+            // contextMenuStrip1
             // 
-            this.rjButton1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
-            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 20;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold);
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(686, 63);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.rjButton1.Size = new System.Drawing.Size(68, 35);
-            this.rjButton1.TabIndex = 336;
-            this.rjButton1.Text = "Stop";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            this.rjButton1.Click += new System.EventHandler(this.Stop_Btn);
-            // 
-            // btnNext
-            // 
-            this.btnNext.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
-            this.btnNext.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
-            this.btnNext.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnNext.BorderRadius = 20;
-            this.btnNext.BorderSize = 0;
-            this.btnNext.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNext.FlatAppearance.BorderSize = 0;
-            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold);
-            this.btnNext.ForeColor = System.Drawing.Color.White;
-            this.btnNext.Location = new System.Drawing.Point(775, 43);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(163, 26);
-            this.btnNext.TabIndex = 334;
-            this.btnNext.Text = "Step Through Cycle";
-            this.btnNext.TextColor = System.Drawing.Color.White;
-            this.btnNext.UseVisualStyleBackColor = false;
-            this.btnNext.Click += new System.EventHandler(this.StepCycle_Tick);
-            // 
-            // btnStart
-            // 
-            this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
-            this.btnStart.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
-            this.btnStart.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnStart.BorderRadius = 20;
-            this.btnStart.BorderSize = 0;
-            this.btnStart.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnStart.FlatAppearance.BorderSize = 0;
-            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold);
-            this.btnStart.ForeColor = System.Drawing.Color.White;
-            this.btnStart.Location = new System.Drawing.Point(775, 75);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(163, 26);
-            this.btnStart.TabIndex = 333;
-            this.btnStart.Text = "Step Through Instruction";
-            this.btnStart.TextColor = System.Drawing.Color.White;
-            this.btnStart.UseVisualStyleBackColor = false;
-            this.btnStart.Click += new System.EventHandler(this.StepThroughInstruction_Click);
-            // 
-            // btnFullCycle
-            // 
-            this.btnFullCycle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFullCycle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
-            this.btnFullCycle.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(29)))), ((int)(((byte)(45)))));
-            this.btnFullCycle.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnFullCycle.BorderRadius = 20;
-            this.btnFullCycle.BorderSize = 0;
-            this.btnFullCycle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFullCycle.FlatAppearance.BorderSize = 0;
-            this.btnFullCycle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFullCycle.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold);
-            this.btnFullCycle.ForeColor = System.Drawing.Color.White;
-            this.btnFullCycle.Location = new System.Drawing.Point(607, 63);
-            this.btnFullCycle.Name = "btnFullCycle";
-            this.btnFullCycle.Size = new System.Drawing.Size(68, 35);
-            this.btnFullCycle.TabIndex = 332;
-            this.btnFullCycle.Text = "Start";
-            this.btnFullCycle.TextColor = System.Drawing.Color.White;
-            this.btnFullCycle.UseVisualStyleBackColor = false;
-            this.btnFullCycle.Click += new System.EventHandler(this.StartToEndBtn_Click);
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // ViewSystem
             // 
@@ -2329,5 +2349,7 @@
         private System.Windows.Forms.TextBox pcInput;
         private RJButton rjButton1;
         private RJButton resetRegisters;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

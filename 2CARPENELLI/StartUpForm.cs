@@ -185,12 +185,14 @@ namespace _2CARPENELLI
                 MenuVertical.Width = 109;
                 btnAssembler.Enabled = false;
                 btnQuickHelp.Enabled = false;
+                formSize = this.ClientSize;
             }
             else
             {
                 btnAssembler.Enabled = true;
                 btnQuickHelp.Enabled = true;
                 MenuVertical.Width = 278;
+                formSize = this.ClientSize;
             }
         }
 
@@ -327,12 +329,23 @@ namespace _2CARPENELLI
             panelChildForm.Controls.Add(childForm);
             panelChildForm.Tag = childForm;
             childForm.BringToFront();
+            childForm.Width = 1456;
             childForm.Show();
+
         }
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
+            MenuVertical.Width = 109;
+            btnAssembler.Enabled = false;
+            btnQuickHelp.Enabled = false;
+            formSize = this.ClientSize;
             openChildForm(new Form2());
+            pictureBox2.Hide();
+            label1.Hide();
+            label3.Hide();
+            label2.Hide();
+
         }
 
         private void Logo_Click(object sender, EventArgs e)
